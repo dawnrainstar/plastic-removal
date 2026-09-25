@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a1529"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </radialGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="bloodGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="124" fill="none" stroke="#1e293b" stroke-width="4"/>
+
+  <!-- Outer Acoustic Resonance Ring -->
+  <circle cx="256" cy="256" r="185" fill="none" stroke="#0ea5e9" stroke-width="4" stroke-dasharray="16 12" opacity="0.4"/>
+  <circle cx="256" cy="256" r="160" fill="none" stroke="url(#ringGrad)" stroke-width="8"/>
+
+  <!-- Central Purified Blood Stream Droplet -->
+  <path d="M256 125 C256 125, 335 220, 335 285 C335 328, 300 365, 256 365 C212 365, 177 328, 177 285 C177 220, 256 125, 256 125 Z" fill="url(#bloodGrad)"/>
+  
+  <!-- Droplet Specular Reflection -->
+  <path d="M235 200 C245 165, 256 145, 256 145 C256 145, 220 220, 220 265 C220 280, 225 295, 230 305 C224 295, 220 280, 220 265 C220 235, 230 215, 235 200 Z" fill="#fca5a5" opacity="0.6"/>
+
+  <!-- Extracted Plastic Particle Fragments Separating Outward -->
+  <!-- Microplastic Fragment 1 (PET Cyan) -->
+  <polygon points="120,200 145,190 155,215 130,225" fill="#38bdf8" stroke="#ffffff" stroke-width="3"/>
+  <!-- Microplastic Fragment 2 (PE Green) -->
+  <polygon points="360,195 385,185 395,210 370,220" fill="#34d399" stroke="#ffffff" stroke-width="3"/>
+  <!-- Microplastic Fragment 3 (PS Orange) -->
+  <circle cx="135" cy="315" r="14" fill="#fb923c" stroke="#ffffff" stroke-width="3"/>
+  <!-- Microplastic Fragment 4 (PVC Rose) -->
+  <polygon points="370,305 390,320 375,340 355,325" fill="#f43f5e" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Acoustic Standing Wave Lines -->
+  <line x1="80" y1="256" x2="160" y2="256" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <line x1="352" y1="256" x2="432" y2="256" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Center Crosshair Target -->
+  <circle cx="256" cy="285" r="18" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+  <circle cx="256" cy="285" r="5" fill="#38bdf8"/>
+</svg>

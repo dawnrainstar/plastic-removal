@@ -1,0 +1,6 @@
+{
+  "name": "HemoPure MNP - Blood Plastic Clearance System",
+  "description": "Interactive biomedical apheresis simulation and engineering platform for extracorporeal microplastic and nanoplastic clearance from human blood.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
